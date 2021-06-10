@@ -1,8 +1,35 @@
 .person-container{
-    border: solid grey;
+    display: flex;
+    padding: .5rem;
+    margin: .5rem;
 }
 
 .photo{
-    background-color: black;
+    border: solid black;  
+    object-fit: cover;
+    height: 125%;
+    width: 125%;
+}
+
+.photo-container{
+    overflow: hidden;
     border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    margin-right: .5rem;
+    box-shadow: .2rem .3rem .2rem rgb(200, 200, 200);
+}
+
+.name{
+    color: rgb(30, 30, 80);
+    font-size: 1rem;
+    letter-spacing: .15rem;
+}
+
+.age{
+    color: rgb(120, 120, 120);
+    letter-spacing: .1rem;
 }

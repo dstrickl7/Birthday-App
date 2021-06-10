@@ -1,10 +1,11 @@
 .card{
     background-color: white;
-    height: 100vh;
-    width: 75vw;
+    min-height: 100vh;
+    width: 85vw;
     border-radius: 5px;;
     flex-flow: wrap;
     margin: 10% 0;
+    box-shadow: 5px 5px rgb(55, 25, 5);
 }
 
 .btn-container{
