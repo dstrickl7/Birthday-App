@@ -3,6 +3,14 @@ import '../styles/Person.css';
 import person from '../styles/person1.jpg'
 
 function Person(props) {
+    // const [person, setPerson] = useState(people);
+    // let newPeople = people.map((person)=>{
+    //     const {id, name, age, birthday, pic} = person;
+    //     return (
+    //         // key={id}, 
+    //         name={name}, age={age}
+    //     ) 
+    // });
     return (
         <div className="person-container">
             <div className="photo-container">
