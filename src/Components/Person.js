@@ -1,15 +1,7 @@
 import React from 'react';
 import '../styles/Person.css';
-import { people } from '../people'
 
 function Person(props) {
-    // const [person, setPerson] = useState(people);
-    // people.map((person)=>{
-    //     const {id, pic} = person;
-    //     return (
-    //         
-    //     ) 
-    // });
     return (
         <div className="person-container">
             <div className="photo-container">
