@@ -35,18 +35,19 @@ Build a birthday tracker app.
 
 ### What I learned
 
--Destructuring - I had briefly used it during a FCC lesson but I didn't really understand what I was doing or why. Now I feel more comfortable with simple applications of it and have a basic understanding of what is happening.
--useState - since I am still a beginner with React, this was a concept I wanted to better understand.
+- Destructuring - I had briefly used it during a FCC lesson but I didn't really understand what I was doing or why. Now I feel more comfortable with simple applications of it and have a basic understanding of what is happening.
+- useState - since I am still a beginner with React, this was a concept I wanted to better understand.
 
 
 ### Challenges
--Getting images to render from JSON
+- Getting images to render from JSON
 
 
 ### Continued development
--Add ability to pull data from outside data and not my own
--Add ability to add birthdays
--Figure out how to get images to load from JSON
+- Add ability to pull data from outside data and not my own
+- Add ability to add birthdays
+- Figure out how to get images to load from JSON
+- Find an efficient way to calculate the total birthdays
 
 
 ### Useful resources
