@@ -8,46 +8,43 @@ import { people } from '../people'
 
 function Card() {
     const [person, setPerson] = useState(people);
-    
-    
-    let clearAll = () =>{
-       
+    let currentDate = () =>{
+        let date = new Date();
+        let month = date.getMonth();
+        let day = date.getDate();
+        return Number(month+day);
     }
 
-// cycle through array, get each person object,
-
-
-// get birthdays that match current day
-let totalBdays= ()=>{
-    return people.length
-;}
-
-// cycle through person object, get each data/key pair
-let newPeople = people.map((person)=>{
-    const {id, name, age, birthday, pic} = person;
-    return (
-        person
-        );
+    let birthdays = people.map((person)=> {
+        const{birthday}=person;
+    return person.birthday
     });
 
-    console.log(newPeople);
-    let addPerson = () =>{
-    
-    }
-    
-    return (
-        <div className="card">
-            <Header total={totalBdays()}/>
-            <div className="people-container">
-               <Person name={person.name}/>
-            </div>
-            <div className="btn-container">
-                <Button name="Add" onClick={setPerson}/>
-                <Button name="Clear All" onClick={()=>setPerson([])}/>
-            </div>
-            
-        </div>
-    )
+// cycle through array, get each person object,
+// get birthdays that match current day
+let totalBdays= ()=>{
+    return 1;
 }
+
+return(
+    <div className="card">
+        <Header total={totalBdays()}/>
+        <div className="people-container">
+       {
+         person.map((person)=>{
+            const { id, name, pic } = person;
+            return (
+                <Person key={id} name={name} src={pic}/>
+            )
+         })  
+       }
+        </div>
+        <div className="btn-container">
+            <Button name="Add" />
+            <Button name="Clear All" onClick={()=>setPerson([])}/>
+        </div>
+    </div>
+    );
+};
 
 export default Card

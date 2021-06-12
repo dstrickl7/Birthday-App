@@ -1,20 +1,19 @@
 import React from 'react';
 import '../styles/Person.css';
-import person from '../styles/person1.jpg'
+import { people } from '../people'
 
 function Person(props) {
     // const [person, setPerson] = useState(people);
-    // let newPeople = people.map((person)=>{
-    //     const {id, name, age, birthday, pic} = person;
+    // people.map((person)=>{
+    //     const {id, pic} = person;
     //     return (
-    //         // key={id}, 
-    //         name={name}, age={age}
+    //         
     //     ) 
     // });
     return (
         <div className="person-container">
             <div className="photo-container">
-                <img src={person} alt={props.name} className="photo" />
+                <img src={props.src} alt={props.name} className="photo" />
             </div>
             <div>
                 <h3 className="name">{props.name}</h3>
