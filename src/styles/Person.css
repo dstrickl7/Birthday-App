@@ -2,6 +2,12 @@
     display: flex;
     padding: .5rem;
     margin: .5rem;
+    max-width: 100%;
+}
+
+.person-container:hover{
+    background-color: rgb(230, 230, 230);
+    box-shadow: .35rem .5rem rgb(220, 220, 220);
 }
 
 .photo{
@@ -17,10 +23,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 1rem;
     width: 75px;
     height: 75px;
-    margin-right: .5rem;
     box-shadow: .2rem .3rem .2rem rgb(200, 200, 200);
+}
+
+.content{
+    flex: 2;
 }
 
 .name{
@@ -32,4 +42,24 @@
 .age{
     color: rgb(120, 120, 120);
     letter-spacing: .1rem;
+}
+
+.delete{
+    color:rgb(238, 156, 186);
+    align-self: center;
+    position: relative;
+    right: 0;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.delete:hover{
+    transform: scale(1.1);
+    color: red;
+}
+
+@media (min-width: 790px){
+    .delete{
+        font-size: 1.5rem;
+    }
 }
