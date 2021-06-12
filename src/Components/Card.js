@@ -15,39 +15,37 @@ function Card() {
         return Number(month+day);
     }
 
-    let birthdays = person.map((person)=> {
-        const{ birthday }=person;
-    return person.birthday
-    });
-
-
-
-// cycle through array, get each person object,
-// get birthdays that match current day
-    let totalBdays= ()=>{
-        return 1;
-    }
+    let totalBdays;
 
 
 return(
     <div className="card">
-        <Header total={totalBdays()}/>
+        <Header total={totalBdays}/>
         <div className="people-container">
        {
          person.map((person)=>{
             const { id, name, pic, birthday } = person;
+// Calculate person's age
             let currentYear = Number(new Date().getFullYear());
             let birthYear = Number(new Date(birthday).getFullYear())
             let personAge = currentYear-birthYear
-        
-            return (
-                <Person
-                    key={id}
-                    name={name} 
-                    src={pic}
-                    age={personAge}
-                    />
-            )
+// Determine current birthdays
+            let birthMonth=Number(new Date(birthday).getMonth())
+            let birthDate=Number(new Date(birthday).getDate())
+            let newBirthDate= birthMonth + birthDate;
+            if(currentDate()===newBirthDate){
+                totalBdays++
+                console.log(totalBdays)
+                return (
+                    <Person
+                        key={id}
+                        name={name} 
+                        src={pic}
+                        age={personAge}
+                        />
+                        
+                )
+            }else{}
          })  
        }
         </div>

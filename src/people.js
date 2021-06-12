@@ -47,4 +47,11 @@ export const people = [
         birthday: 'June 13 1987',
         pic: require('./styles/images/person1.jpg'),
     },
+    {
+        id: 9,
+        name:'First LastName',
+        birthday: 'June 12 1986',
+        pic: require('./styles/images/person1.jpg'),
+    },
+
 ]
