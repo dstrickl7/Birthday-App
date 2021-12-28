@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Birthday-App/static/css/main.d4dd512d.chunk.css",
+    "main.js": "/Birthday-App/static/js/main.7c039bef.chunk.js",
+    "main.js.map": "/Birthday-App/static/js/main.7c039bef.chunk.js.map",
+    "runtime-main.js": "/Birthday-App/static/js/runtime-main.249c05bd.js",
+    "runtime-main.js.map": "/Birthday-App/static/js/runtime-main.249c05bd.js.map",
+    "static/js/2.8ee47e33.chunk.js": "/Birthday-App/static/js/2.8ee47e33.chunk.js",
+    "static/js/2.8ee47e33.chunk.js.map": "/Birthday-App/static/js/2.8ee47e33.chunk.js.map",
+    "index.html": "/Birthday-App/index.html",
+    "static/css/main.d4dd512d.chunk.css.map": "/Birthday-App/static/css/main.d4dd512d.chunk.css.map",
+    "static/js/2.8ee47e33.chunk.js.LICENSE.txt": "/Birthday-App/static/js/2.8ee47e33.chunk.js.LICENSE.txt",
+    "static/media/person1.jpg": "/Birthday-App/static/media/person1.5ea8f1f3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.249c05bd.js",
+    "static/js/2.8ee47e33.chunk.js",
+    "static/css/main.d4dd512d.chunk.css",
+    "static/js/main.7c039bef.chunk.js"
+  ]
+}
